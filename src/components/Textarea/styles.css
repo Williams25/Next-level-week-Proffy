@@ -1,3 +1,50 @@
+/* #search-teachers label {
+  color: var(--color-text-in-primary);
+} */
+
+.textarea-block {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.textarea-block+.textarea-block {
+  margin-top: 1.4rem;
+}
+
+.textarea-block label {
+  font-size: 1.4 rem;
+}
+
+.textarea-block textarea {
+  width: 100%;
+  height: 16.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  outline: 0;
+  padding: 1.2rem 1.6rem;
+  font: 1.6rem Archivo;
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.textarea-block:focus-within::after {
+  width: calc(100% - 3.2rem);
+  height: 2px;
+  content: '';
+  background: var(--color-primary-light);
+  position: absolute;
+  left: 1.6rem;
+  right: 1.6rem;
+  bottom: 1px;
+}
+
+/* 
+#page-teacher-list  main{
+  margin: 3.2rem auto;
+  width: 90%;
+}
 
 .teacher-item {
   background-color: var(--color-box-base);
@@ -49,7 +96,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .teacher-item footer strong {
@@ -58,7 +104,7 @@
   display: block;
 }
 
-.teacher-item footer a {
+.teacher-item footer button {
   width: 20rem;
   height: 5.6rem;
   background: var(--color-secundary);
@@ -70,15 +116,29 @@
   align-items: center;
   justify-content: space-evenly;
   transition: 0.9s;
-  text-decoration: none;
 }
 
-.teacher-item footer a:hover {
+.teacher-item footer button:hover {
   background: var(--color-secundary-dark);
-}
+} */
 
 @media (min-width: 700px) {
-  #page-teacher-list main {
+  /* #page-teacher-list {
+    max-width: 100%;
+  }
+
+  #search-teachers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    position: absolute;
+    bottom: -28px;
+  } */
+  .textarea-block + .textarea-block {
+    margin-top: 0rem;
+  }
+  
+  /* #page-teacher-list main {
     padding: 3.2rem 0;
     max-width: 740px;
     margin: 0 auto;
@@ -94,7 +154,7 @@
 
   .teacher-item footer strong {
     display: initial;
-    margin-left: 1.60rem;
+    margin-left: 1.6rem;
   }
 
   .teacher-item footer button {
@@ -105,5 +165,5 @@
 
   .teacher-item footer button img{
     margin-right: 1.6rem;
-  }
+  } */
 }
